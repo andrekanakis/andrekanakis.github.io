@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <title>About me</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF8">
+</head>
+
+<body>
+  <div class="content">
+    <div class="titlebar">
+      <h1>
+        Contact
+      </h1>
+      <button class="hamburger">☰</button>
+      <nav class="nav-menu">
+        <ul>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="about.html">About me</a> </li>
+          <!-- <li> <a href="blog.html">Blog</a> </li> -->
+          <!-- <li> <a href="projects.html">Projects</a> </li> -->
+          <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+    <section>
+      <h2>Ways to contact me</h2>
+      <p>
+        You can contact me via email at: <a href="mailto:andrekanakis@icloud.com"><u>andrekanakis@icloud.com</u></a>
+      </p>
+      <p>
+        Send me a message on Github: <a href="https://github.com/andrekanakis"><u>github.com/andrekanakis</u></a>
+      </p>
+      <p>
+        Connect with me on LinkedIn: <a
+          href="https://www.linkedin.com/in/andrekanakis"><u>linkedin.com/in/andrekanakis</u></a>
+      </p>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <ul>
+      <li> <a href="https://linkedin.com/in/andrekanakis">LinkedIn</a> </li>
+      <li> <a href="https://github.com/andrekanakis">Github</a> </li>
+    </ul>
+  </footer>
+
+
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function () {
+      document.querySelector('.nav-menu').classList.toggle('active');
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+/* Base styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #171717;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvectica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Layout */
+.content {
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em;
+  flex: 1;
+  line-height: 1.5;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 24px 0 16px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.5rem;
+}
+
+/* Links */
+a {
+  color: #c9d1d9;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+
+a:last-child {
+  padding-right: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Lists */
+.footer ul,
+.titlebar nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Footer */
+.footer {
+  padding: 1em;
+  text-align: center;
+}
+
+.footer li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+.footer li:last-child {
+  padding-right: 0;
+}
+
+/* Titlebar */
+.titlebar h1 {
+  text-align: left;
+}
+
+.titlebar p {
+  text-align: right;
+}
+
+.titlebar nav {
+  text-align: right;
+}
+
+.titlebar nav li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+.titlebar nav li:last-child {
+  padding-right: 0;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #c9d1d9;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* Mobile Styles */
+@media screen and (max-width: 805px) {
+  .content {
+    max-width: 80%;
+  }
+
+
+  .titlebar {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+  }
+
+  .titlebar h1 {
+    margin: 0;
+    line-height: 1.2;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    height: fit-content;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #171717;
+    padding: 1rem;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .titlebar nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .titlebar nav li {
+    display: block;
+    padding: 0;
+  }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 806px) {
+  .titlebar {
+    text-align: justify;
+    width: 100%;
+  }
+
+  .titlebar h1,
+  .titlebar nav {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .titlebar:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
+
+  .nav-menu {
+    display: inline-block;
+  }
+}

@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <title>About me</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF8">
+</head>
+
+<body>
+  <div class="content">
+    <div class="titlebar">
+      <h1>
+        About me
+      </h1>
+      <button class="hamburger">☰</button>
+      <nav class="nav-menu">
+        <ul>
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="about.html">About me</a> </li>
+          <!-- <li> <a href="blog.html">Blog</a> </li> -->
+          <!-- <li> <a href="projects.html">Projects</a> </li> -->
+          <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+      </nav>
+    </div>
+    <hr>
+    <!-- <section> -->
+    <!-- <embed src="assets/cv_svenska.pdf" type="application/pdf" width="100%" height="900px" /> -->
+    <!-- </section> -->
+    <section>
+      <h2>Education</h2>
+      <p>
+        Bachelor of Science in Engineering, Computer Science and Engineering @ Lunds Tekniska Högskola
+        <br> Graduating in 2025!
+      </p>
+    </section>
+
+    <section>
+      <h2>Programming Languages</h2>
+      <p>
+        Java, Go, C++, C, Python, TypeScript, JavaScript, SQL
+      </p>
+    </section>
+
+    <section>
+      <h2>Technologies</h2>
+      <p>
+        Deno, NodeJS, Git, Github, nvim, Helix, Linux, MacOS, Typst, LaTeX, PostgreSQL, MongoDB
+      </p>
+    </section>
+
+    <section>
+      <h2>Setup</h2>
+      <p>
+        I mainly develop on a M3 Macbook Air and I use a Glove80 keyoard with a custom QWERTY-keymap with a 52-key
+        layout. For the most part I use Helix and nvim as my editors of choice.
+      </p>
+    </section>
+
+    <section>
+      <h2><a href="assets/cv_swedish.pdf" target="_blank">Resume</a></h2>
+      <p>You can also click the title above to open my resume in a new tab! </p>
+      <embed src="assets/cv_swedish.pdf" width="100%" height="60%">
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <ul>
+      <li> <a href="https://linkedin.com/in/andrekanakis">LinkedIn</a> </li>
+      <li> <a href="https://github.com/andrekanakis">Github</a> </li>
+    </ul>
+  </footer>
+
+
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function () {
+      document.querySelector('.nav-menu').classList.toggle('active');
+    });
+  </script>
+
+</body>
+
+</html>
